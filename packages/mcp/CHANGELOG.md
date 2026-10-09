@@ -1,5 +1,12 @@
 # @upstash/context7-mcp
 
+## 4.2.1
+
+### Patch Changes
+
+- dd48abc: query-docs now sets `isError` on its result when the documentation request fails (invalid library ID, API or network error), so clients that branch on `isError` no longer treat the error text as documentation.
+- 6116042: Report the actual assigned HTTP port when `--port 0` requests an ephemeral port.
+
 ## 4.2.0
 
 ### Minor Changes
